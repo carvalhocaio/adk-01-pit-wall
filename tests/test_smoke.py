@@ -1,5 +1,5 @@
-import app_name
+import adk_01_pit_wall
 
 
 def test_version() -> None:
-    assert app_name.__version__ == "0.1.0"
+    assert adk_01_pit_wall.__version__ == "0.1.0"

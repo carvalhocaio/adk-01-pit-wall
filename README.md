@@ -42,21 +42,21 @@ make hooks
 
 ## 🛠️ Available Commands
 
-| Command | Description |
-|---|---|
-| `make help` | Show all available commands |
-| `make sync` | Install runtime and dev dependencies using `uv` |
-| `make hooks` | Install pre-commit hooks into `.git/hooks` |
-| `make hooks-run` | Run pre-commit checks on all files |
-| `make test` | Run tests with `pytest` |
-| `make lint` | Check code with `ruff` |
-| `make lint-fix` | Automatically fix linting issues |
-| `make format` | Format code with `ruff` |
-| `make format-check` | Check code formatting without modifying |
-| `make audit` | Audit dependencies for vulnerabilities with `pip-audit` |
-| `make ci` | Run full verification pipeline locally (`lint`, `format-check`, `audit`, `test`) |
-| `make clean` | Remove caches and build artifacts |
-| `make rename NAME=...` | Rename package and update configuration |
+| Command                | Description                                                                      |
+|------------------------|----------------------------------------------------------------------------------|
+| `make help`            | Show all available commands                                                      |
+| `make sync`            | Install runtime and dev dependencies using `uv`                                  |
+| `make hooks`           | Install pre-commit hooks into `.git/hooks`                                       |
+| `make hooks-run`       | Run pre-commit checks on all files                                               |
+| `make test`            | Run tests with `pytest`                                                          |
+| `make lint`            | Check code with `ruff`                                                           |
+| `make lint-fix`        | Automatically fix linting issues                                                 |
+| `make format`          | Format code with `ruff`                                                          |
+| `make format-check`    | Check code formatting without modifying                                          |
+| `make audit`           | Audit dependencies for vulnerabilities with `pip-audit`                          |
+| `make ci`              | Run full verification pipeline locally (`lint`, `format-check`, `audit`, `test`) |
+| `make clean`           | Remove caches and build artifacts                                                |
+| `make rename NAME=...` | Rename package and update configuration                                          |
 
 ---
 

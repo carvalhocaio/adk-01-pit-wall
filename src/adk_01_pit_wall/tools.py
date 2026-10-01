@@ -165,7 +165,7 @@ class PitWallTools:
         up as pit stops. Pace only uses clean laps, excluding pit in-laps and
         out-laps, and the median clean lap decides the fastest driver because
         it resists safety car laps. When clean_laps is 0 the pace fields are
-        ommited. fastest_driver_id is ommited when stint is all. Race laps only,
+        omitted. fastest_driver_id is omitted when stint is all. Race laps only,
         never qualifying or practice.
         """
         driver_ids = _normalize_drivers(drivers)

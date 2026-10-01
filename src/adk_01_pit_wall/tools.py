@@ -52,7 +52,7 @@ CircuitId = Annotated[
     Field(
         description=(
             "Ergast circuit id, for example interlagos, monza, silverstone or "
-            "red_bull_ring. Provide either round or circuit_id, never both,"
+            "red_bull_ring. Provide either round or circuit_id, never both."
         )
     ),
 ]

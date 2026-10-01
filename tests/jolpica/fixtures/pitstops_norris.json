@@ -1,0 +1,52 @@
+{
+  "MRData": {
+    "xmlns": "",
+    "series": "f1",
+    "url": "https://api.jolpi.ca/ergast/f1/2024/21/drivers/norris/pitstops/",
+    "limit": "30",
+    "offset": "0",
+    "total": "2",
+    "RaceTable": {
+      "season": "2024",
+      "round": "21",
+      "driverId": "norris",
+      "Races": [
+        {
+          "season": "2024",
+          "round": "21",
+          "url": "https://en.wikipedia.org/wiki/2024_S%C3%A3o_Paulo_Grand_Prix",
+          "raceName": "São Paulo Grand Prix",
+          "Circuit": {
+            "circuitId": "interlagos",
+            "url": "https://en.wikipedia.org/wiki/Interlagos_Circuit",
+            "circuitName": "Autódromo José Carlos Pace",
+            "Location": {
+              "lat": "-23.7036",
+              "long": "-46.6997",
+              "locality": "São Paulo",
+              "country": "Brazil"
+            }
+          },
+          "date": "2024-11-03",
+          "time": "17:00:00Z",
+          "PitStops": [
+            {
+              "driverId": "norris",
+              "lap": "28",
+              "stop": "1",
+              "time": "13:30:01",
+              "duration": "24.764"
+            },
+            {
+              "driverId": "norris",
+              "lap": "32",
+              "stop": "2",
+              "time": "13:38:46",
+              "duration": "23:35.363"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

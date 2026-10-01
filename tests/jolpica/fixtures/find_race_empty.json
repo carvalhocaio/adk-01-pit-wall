@@ -1,0 +1,15 @@
+{
+  "MRData": {
+    "xmlns": "",
+    "series": "f1",
+    "url": "https://api.jolpi.ca/ergast/f1/2024/circuits/monza_street/races/",
+    "limit": "30",
+    "offset": "0",
+    "total": "0",
+    "RaceTable": {
+      "season": "2024",
+      "circuitId": "monza_street",
+      "Races": []
+    }
+  }
+}

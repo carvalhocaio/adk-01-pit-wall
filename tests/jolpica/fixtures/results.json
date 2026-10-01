@@ -1,0 +1,95 @@
+{
+  "MRData": {
+    "xmlns": "",
+    "series": "f1",
+    "url": "https://api.jolpi.ca/ergast/f1/2024/21/results/",
+    "limit": "2",
+    "offset": "0",
+    "total": "2",
+    "RaceTable": {
+      "season": "2024",
+      "round": "21",
+      "Races": [
+        {
+          "season": "2024",
+          "round": "21",
+          "url": "https://en.wikipedia.org/wiki/2024_S%C3%A3o_Paulo_Grand_Prix",
+          "raceName": "São Paulo Grand Prix",
+          "Circuit": {
+            "circuitId": "interlagos",
+            "url": "https://en.wikipedia.org/wiki/Interlagos_Circuit",
+            "circuitName": "Autódromo José Carlos Pace",
+            "Location": {
+              "lat": "-23.7036",
+              "long": "-46.6997",
+              "locality": "São Paulo",
+              "country": "Brazil"
+            }
+          },
+          "date": "2024-11-03",
+          "time": "17:00:00Z",
+          "Results": [
+            {
+              "number": "1",
+              "position": "1",
+              "positionText": "1",
+              "points": "26",
+              "Driver": {
+                "driverId": "max_verstappen",
+                "permanentNumber": "3",
+                "code": "VER",
+                "url": "http://en.wikipedia.org/wiki/Max_Verstappen",
+                "givenName": "Max",
+                "familyName": "Verstappen",
+                "dateOfBirth": "1997-09-30",
+                "nationality": "Dutch"
+              },
+              "Constructor": {
+                "constructorId": "red_bull",
+                "url": "https://en.wikipedia.org/wiki/Red_Bull_Racing",
+                "name": "Red Bull",
+                "nationality": "Austrian"
+              },
+              "grid": "17",
+              "laps": "69",
+              "status": "Finished",
+              "Time": {
+                "millis": "7614430",
+                "time": "2:06:54.430"
+              }
+            },
+            {
+              "number": "31",
+              "position": "2",
+              "positionText": "2",
+              "points": "18",
+              "Driver": {
+                "driverId": "ocon",
+                "permanentNumber": "31",
+                "code": "OCO",
+                "url": "http://en.wikipedia.org/wiki/Esteban_Ocon",
+                "givenName": "Esteban",
+                "familyName": "Ocon",
+                "dateOfBirth": "1996-09-17",
+                "nationality": "French"
+              },
+              "Constructor": {
+                "constructorId": "alpine",
+                "url": "https://en.wikipedia.org/wiki/Alpine_F1_Team",
+                "name": "Alpine F1 Team",
+                "nationality": "French"
+              },
+              "grid": "4",
+              "laps": "69",
+              "status": "Finished",
+              "Time": {
+                "millis": "7633907",
+                "time": "+19.477"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

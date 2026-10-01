@@ -120,7 +120,7 @@ class PitWallTools:
             ),
         ] = None,
     ) -> StandingsReport:
-        """Returns the Formula 1 driver's championship standings for a season.
+        """Returns the Formula 1 drivers' championship standings for a season.
 
         Use it for questions about championship points, positions or number of
         wins, either for the latest standings or as they stood after a round.

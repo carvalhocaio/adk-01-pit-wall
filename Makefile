@@ -1,4 +1,7 @@
-.PHONY: help sync install hooks hooks-run test lint lint-fix format format-check audit ci check clean
+AGENTS_DIR := src
+AGENT_DIR := $(AGENTS_DIR)/adk_01_pit_wall
+
+.PHONY: help sync install hooks hooks-run run web api test lint lint-fix format format-check audit ci check clean
 
 help: ## Lists all available Makefile commands
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-16s\033[0m %s\n", $$1, $$2}'
@@ -13,6 +16,15 @@ hooks: ## Installs the pre-commit hooks into .git/hooks
 
 hooks-run: ## Runs all pre-commit hooks against all files
 	uv run pre-commit run --all-files
+
+run: ## Chats with the agent in the terminal
+	uv run adk run $(AGENT_DIR)
+
+web: ## Starts the ADK dev UI on localhost
+	uv run adk web $(AGENTS_DIR)
+
+api: ## Starts the ADK API server on localhost
+	uv run adk api_server $(AGENTS_DIR)
 
 test: ## Runs the test suite with pytest
 	uv run pytest

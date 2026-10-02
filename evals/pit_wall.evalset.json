@@ -1,0 +1,131 @@
+{
+  "eval_set_id": "pit_wall_tools",
+  "name": "Pit Wall tool use",
+  "description": "Tool selection, grounded figures and reference answers for race questions with a known answer.",
+  "eval_cases": [
+    {
+      "eval_id": "race_winner",
+      "conversation": [
+        {
+          "invocation_id": "race-winner-1",
+          "user_content": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Quem venceu o GP de São Paulo de 2024?"
+              }
+            ]
+          },
+          "final_response": {
+            "role": "model",
+            "parts": [
+              {
+                "text": "Max Verstappen venceu o GP de São Paulo de 2024 pela Red Bull, largando da 17ª posição do grid."
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "name": "get_race_results",
+                "args": {
+                  "season": 2024,
+                  "circuit_id": "interlagos"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "adk_01_pit_wall",
+        "user_id": "eval_user",
+        "state": {}
+      }
+    },
+    {
+      "eval_id": "standings_after_round",
+      "conversation": [
+        {
+          "invocation_id": "standings-after-round-1",
+          "user_content": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Quem liderava o campeonato de pilotos de 2024 depois da rodada 21, e com quantos pontos?"
+              }
+            ]
+          },
+          "final_response": {
+            "role": "model",
+            "parts": [
+              {
+                "text": "Max Verstappen liderava o campeonato de pilotos de 2024 depois da rodada 21, com 393 pontos."
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "name": "get_driver_standings",
+                "args": {
+                  "season": 2024,
+                  "after_round": 21
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "adk_01_pit_wall",
+        "user_id": "eval_user",
+        "state": {}
+      }
+    },
+    {
+      "eval_id": "final_stint_pace",
+      "conversation": [
+        {
+          "invocation_id": "final-stint-pace-1",
+          "user_content": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Quem foi mais rápido no stint final em Interlagos 2024, Verstappen ou Norris?"
+              }
+            ]
+          },
+          "final_response": {
+            "role": "model",
+            "parts": [
+              {
+                "text": "Verstappen foi mais rápido no stint final de Interlagos 2024: mediana de volta limpa de 1:22.271, contra 1:23.361 de Norris."
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "name": "compare_lap_times",
+                "args": {
+                  "season": 2024,
+                  "circuit_id": "interlagos",
+                  "drivers": [
+                    "max_verstappen",
+                    "norris"
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "adk_01_pit_wall",
+        "user_id": "eval_user",
+        "state": {}
+      }
+    }
+  ]
+}

@@ -1,0 +1,1434 @@
+{
+  "eval_set_result_id": "adk_01_pit_wall_pit_wall_guardrails_1790951570.6364212",
+  "eval_set_result_name": "adk_01_pit_wall_pit_wall_guardrails_1790951570.6364212",
+  "eval_set_id": "pit_wall_guardrails",
+  "eval_case_results": [
+    {
+      "eval_set_file": "pit_wall_guardrails",
+      "eval_set_id": "pit_wall_guardrails",
+      "eval_id": "off_topic",
+      "final_eval_status": 1,
+      "eval_metric_results": null,
+      "overall_eval_metric_results": [
+        {
+          "metric_name": "tool_trajectory_avg_score",
+          "threshold": 1.0,
+          "criterion": {
+            "threshold": 1.0,
+            "include_intermediate_responses_in_final": false,
+            "match_type": "EXACT"
+          },
+          "custom_function_path": null,
+          "score": 1.0,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": null,
+            "token_usage_details": null
+          }
+        },
+        {
+          "metric_name": "final_response_match_v2",
+          "threshold": 0.9,
+          "criterion": {
+            "threshold": 0.9,
+            "include_intermediate_responses_in_final": false,
+            "judge_model_options": {
+              "judge_model": "gemini-pro-latest",
+              "num_samples": 3
+            }
+          },
+          "custom_function_path": null,
+          "score": 1.0,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": null,
+            "token_usage_details": null
+          }
+        },
+        {
+          "metric_name": "tool_call_count_v1",
+          "threshold": null,
+          "criterion": null,
+          "custom_function_path": null,
+          "score": 0.0,
+          "eval_status": 4,
+          "details": {
+            "rubric_scores": null,
+            "token_usage_details": null
+          }
+        },
+        {
+          "metric_name": "inference_call_count_v1",
+          "threshold": null,
+          "criterion": null,
+          "custom_function_path": null,
+          "score": 1.0,
+          "eval_status": 4,
+          "details": {
+            "rubric_scores": null,
+            "token_usage_details": null
+          }
+        },
+        {
+          "metric_name": "token_usage_v1",
+          "threshold": null,
+          "criterion": null,
+          "custom_function_path": null,
+          "score": 1487.0,
+          "eval_status": 4,
+          "details": {
+            "rubric_scores": null,
+            "token_usage_details": {
+              "total_tokens": 1487.0,
+              "input_tokens": 1345.0,
+              "prompt_tokens": 1345.0,
+              "cached_tokens": null,
+              "tool_use_tokens": null,
+              "output_tokens": 142.0,
+              "candidates_tokens": 28.0,
+              "reasoning_tokens": 114.0
+            }
+          }
+        },
+        {
+          "metric_name": "invocation_duration_v1",
+          "threshold": null,
+          "criterion": null,
+          "custom_function_path": null,
+          "score": 2.873,
+          "eval_status": 4,
+          "details": {
+            "rubric_scores": null,
+            "token_usage_details": null
+          }
+        }
+      ],
+      "eval_metric_result_per_invocation": [
+        {
+          "actual_invocation": {
+            "invocation_id": "e-042df0c3-662f-4df2-b2e3-09ab131b1be9",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Qual é a capital da Austrália?",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null,
+                  "media_processing": null,
+                  "speech_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Isso está fora do escopo do pit wall; só temos dados de telemetria e corridas de Fórmula 1 por aqui.",
+                  "thought": null,
+                  "thought_signature": "EsoECscEAWkUfROQYGJSfdz_47TEu5zJl4M-HEU7Xjaz9kMeWfRIpYFqNKfC81N8WelLUU9smKnHnKgdP0X6ppo3DstB3nFlwPcGGnGGLEtrfb4IbgAcQHpB27z9iNVx4wsLaBETe-_nG_bxn_234ky7p1qf_Kl_9V7YD_7UH1JBg6VttjoKGbEmQADpkmgW3E7ITK-oaljeNQdGIYn-vJWOkDTnKBlsZSFB2Pu1y2VqZSz636uoMCEmIk1oQjaKEtVJHK4kBrQEJQKrYiZ2s0uKWTZKFKjHv_rpvImyFcJoB0IKifbJ9ghtEOLzrweiB8N90SMertkusAN0dMBSKVbm_2O8NTW4oxStZe7fERkOR9USYMo0uo7zr4d8eoYIG1JBEAwi1V7gSCGDkC5lv2DMXzdUp2rPdguPLwPQaSDU8ilXRXWIEGXrKhBjsNarGIWp_uE4C-OAHPgy9CiOYBxS9GIGO8SJkuulADVYdHBcAZ_VcI2mFI-DYcERNcSVsPvdwXKsy0EGp5JyAFMahJHm0UOfsYqqeWo1kP_xEkUcFkxxgIociERQQ5HLqE8FC570gKSQSnofBAOV_wgftTWLzGo7R92_f6bcj3p2Yr8_PdAcdfXf4-v35fuYt8VzuJiY-mCRkGe8yi2wAJevZi2bUD6KEVayBnIgM2RyArwLNQ-JeQ2KBz3DTpJ4dNMHm2qoRS788iFICRBvrd2enak2MwQIi7XaM839-dwIorPllXtUNXr74fE5BAUO19xYqMgqT8NSmR3hL_iC0A==",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null,
+                  "media_processing": null,
+                  "speech_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "invocation_events": [
+                {
+                  "author": "pit_wall",
+                  "content": null,
+                  "grounding_metadata": null,
+                  "usage_metadata": {
+                    "cache_tokens_details": null,
+                    "cached_content_token_count": null,
+                    "candidates_token_count": 28,
+                    "candidates_tokens_details": null,
+                    "prompt_token_count": 1345,
+                    "prompt_tokens_details": [
+                      {
+                        "modality": "TEXT",
+                        "token_count": 1345
+                      }
+                    ],
+                    "thoughts_token_count": 114,
+                    "tool_use_prompt_token_count": null,
+                    "tool_use_prompt_tokens_details": null,
+                    "total_token_count": 1487,
+                    "traffic_type": null
+                  },
+                  "model_version": "gemini-3.8-flash"
+                }
+              ]
+            },
+            "creation_timestamp": 1790951549.2420897,
+            "duration": 2.873,
+            "rubrics": null,
+            "app_details": {
+              "agent_details": {
+                "pit_wall": {
+                  "name": "pit_wall",
+                  "instructions": "You are the pit wall of a Formula 1 team: a race engineer who answers questions about Grand Prix results, championship standings and race pace using the timing archive exposed by your tools.\n\nHow to work\n- Every figure you state (positions, points, lap times, gaps, stint lengths) must come from a tool result in this conversation. Never answer from memory.\n- Identify a race by season plus circuit_id or round. Circuit ids: albert_park, americas, bahrain, baku, catalunya, hungaroring, imola, interlagos, jeddah, losail, marina_bay, miami, monaco, monza, red_bull_ring, rodriguez, shanghai, silverstone, spa, suzuka, vegas, villeneuve, yas_marina, zandvoort.\n- If the user does not say which season, ask for it in one short question before calling any tool.\n- compare_lap_times needs driver ids. Unless you already saw the id in a tool result, call get_race_results for that race first and take the ids from it.\n- When comparing pace, lead with the median clean lap, mention the best lap as secondary, and state how many clean laps each figure is based on.\n- Pit stop laps can include red flag stoppages. If a stint looks unusually short, say so instead of drawing conclusions from it.\n- If a tool returns an error, explain in one sentence what was missing and how to rephrase. Do not repeat a call with the same arguments.\n- Stay on Formula 1 race data. For anything else, say in one sentence that it is outside the pit wall's remit.\n\nStyle\n- Reply in the user's language.\n- Answer like a radio call: the conclusion first, then the supporting numbers, no filler.\n\n\nYou are an agent. Your internal name is \"pit_wall\". The description about you is \"Formula 1 race engineer that answers questions about Grand Prix results, championship standings and race pace from lap timing data.\".",
+                  "tool_declarations": [
+                    {
+                      "retrieval": null,
+                      "computer_use": null,
+                      "file_search": null,
+                      "google_search": null,
+                      "google_maps": null,
+                      "code_execution": null,
+                      "enterprise_web_search": null,
+                      "function_declarations": [
+                        {
+                          "description": "Returns the official classification of a Formula 1 Grand Prix.\n\nEach entry has the finishing position, driver id, team, grid slot, laps\ncompleted, status and points. A grid of 0 means a pit lane start. Call\nit first whenever you need driver ids for compare_lap_times or need to\nknow who finished where.",
+                          "name": "get_race_results",
+                          "parameters": null,
+                          "parameters_json_schema": {
+                            "properties": {
+                              "season": {
+                                "description": "Championship year, for example 2024.",
+                                "minimum": 1950,
+                                "title": "Season",
+                                "type": "integer"
+                              },
+                              "round": {
+                                "anyOf": [
+                                  {
+                                    "minimum": 1,
+                                    "type": "integer"
+                                  },
+                                  {
+                                    "type": "null"
+                                  }
+                                ],
+                                "default": null,
+                                "description": "Round number within the season. Provide either round or circuit_id, never both.",
+                                "title": "Round"
+                              },
+                              "circuit_id": {
+                                "anyOf": [
+                                  {
+                                    "type": "string"
+                                  },
+                                  {
+                                    "type": "null"
+                                  }
+                                ],
+                                "default": null,
+                                "description": "Ergast circuit id, for example interlagos, monza, silverstone or red_bull_ring. Provide either round or circuit_id, never both.",
+                                "title": "Circuit Id"
+                              }
+                            },
+                            "required": [
+                              "season"
+                            ],
+                            "title": "get_race_resultsParams",
+                            "type": "object"
+                          },
+                          "response": null,
+                          "response_json_schema": null,
+                          "behavior": null
+                        },
+                        {
+                          "description": "Returns the Formula 1 drivers' championship standings for a season.\n\nUse it for questions about championship points, positions or number of\nwins, either for the latest standings or as they stood after a round.\nA position of 0 means the driver is unclassified.",
+                          "name": "get_driver_standings",
+                          "parameters": null,
+                          "parameters_json_schema": {
+                            "properties": {
+                              "season": {
+                                "description": "Championship year, for example 2024.",
+                                "minimum": 1950,
+                                "title": "Season",
+                                "type": "integer"
+                              },
+                              "after_round": {
+                                "anyOf": [
+                                  {
+                                    "minimum": 1,
+                                    "type": "integer"
+                                  },
+                                  {
+                                    "type": "null"
+                                  }
+                                ],
+                                "default": null,
+                                "description": "Return the standings as they were after this round. Omit it for the latest standings of the season.",
+                                "title": "After Round"
+                              }
+                            },
+                            "required": [
+                              "season"
+                            ],
+                            "title": "get_driver_standingsParams",
+                            "type": "object"
+                          },
+                          "response": null,
+                          "response_json_schema": null,
+                          "behavior": null
+                        },
+                        {
+                          "description": "Compares race pace between drivers in a single Grand Prix.\n\nLaps are split into stints at pit stop laps; red flag stoppages can show\nup as pit stops. Pace only uses clean laps, excluding pit in-laps and\nout-laps, and the median clean lap decides the fastest driver because\nit resists safety car laps. When clean_laps is 0 the pace fields are\nomitted. fastest_driver_id is omitted when stint is all. Race laps only,\nnever qualifying or practice.",
+                          "name": "compare_lap_times",
+                          "parameters": null,
+                          "parameters_json_schema": {
+                            "properties": {
+                              "season": {
+                                "description": "Championship year, for example 2024.",
+                                "minimum": 1950,
+                                "title": "Season",
+                                "type": "integer"
+                              },
+                              "drivers": {
+                                "description": "Ergast driver ids to compare, between 1 and 4, for example max_verstappen, norris or hamilton. Use get_race_results to discover them.",
+                                "items": {
+                                  "type": "string"
+                                },
+                                "title": "Drivers",
+                                "type": "array"
+                              },
+                              "round": {
+                                "anyOf": [
+                                  {
+                                    "minimum": 1,
+                                    "type": "integer"
+                                  },
+                                  {
+                                    "type": "null"
+                                  }
+                                ],
+                                "default": null,
+                                "description": "Round number within the season. Provide either round or circuit_id, never both.",
+                                "title": "Round"
+                              },
+                              "circuit_id": {
+                                "anyOf": [
+                                  {
+                                    "type": "string"
+                                  },
+                                  {
+                                    "type": "null"
+                                  }
+                                ],
+                                "default": null,
+                                "description": "Ergast circuit id, for example interlagos, monza, silverstone or red_bull_ring. Provide either round or circuit_id, never both.",
+                                "title": "Circuit Id"
+                              },
+                              "stint": {
+                                "default": "final",
+                                "description": "Which stint to analyse: final (default), all, or a stint number such as 2.",
+                                "title": "Stint",
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "season",
+                              "drivers"
+                            ],
+                            "title": "compare_lap_timesParams",
+                            "type": "object"
+                          },
+                          "response": null,
+                          "response_json_schema": null,
+                          "behavior": null
+                        }
+                      ],
+                      "google_search_retrieval": null,
+                      "parallel_ai_search": null,
+                      "url_context": null,
+                      "mcp_servers": null,
+                      "exa_ai_search": null
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "expected_invocation": {
+            "invocation_id": "off-topic-1",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Qual é a capital da Austrália?",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null,
+                  "media_processing": null,
+                  "speech_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Isso está fora do escopo do pit wall, que só responde sobre dados de corrida da Fórmula 1.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null,
+                  "media_processing": null,
+                  "speech_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "tool_uses": [],
+              "tool_responses": [],
+              "intermediate_responses": []
+            },
+            "creation_timestamp": 0.0,
+            "duration": null,
+            "rubrics": null,
+            "app_details": null
+          },
+          "eval_metric_results": [
+            {
+              "metric_name": "tool_trajectory_avg_score",
+              "threshold": 1.0,
+              "criterion": {
+                "threshold": 1.0,
+                "include_intermediate_responses_in_final": false,
+                "match_type": "EXACT"
+              },
+              "custom_function_path": null,
+              "score": 1.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": null,
+                "token_usage_details": null
+              }
+            },
+            {
+              "metric_name": "final_response_match_v2",
+              "threshold": 0.9,
+              "criterion": {
+                "threshold": 0.9,
+                "include_intermediate_responses_in_final": false,
+                "judge_model_options": {
+                  "judge_model": "gemini-pro-latest",
+                  "num_samples": 3
+                }
+              },
+              "custom_function_path": null,
+              "score": 1.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": null,
+                "token_usage_details": null
+              }
+            },
+            {
+              "metric_name": "tool_call_count_v1",
+              "threshold": null,
+              "criterion": null,
+              "custom_function_path": null,
+              "score": 0.0,
+              "eval_status": 4,
+              "details": {
+                "rubric_scores": null,
+                "token_usage_details": null
+              }
+            },
+            {
+              "metric_name": "inference_call_count_v1",
+              "threshold": null,
+              "criterion": null,
+              "custom_function_path": null,
+              "score": 1.0,
+              "eval_status": 4,
+              "details": {
+                "rubric_scores": null,
+                "token_usage_details": null
+              }
+            },
+            {
+              "metric_name": "token_usage_v1",
+              "threshold": null,
+              "criterion": null,
+              "custom_function_path": null,
+              "score": 1487.0,
+              "eval_status": 4,
+              "details": {
+                "rubric_scores": null,
+                "token_usage_details": {
+                  "total_tokens": 1487.0,
+                  "input_tokens": 1345.0,
+                  "prompt_tokens": 1345.0,
+                  "cached_tokens": null,
+                  "tool_use_tokens": null,
+                  "output_tokens": 142.0,
+                  "candidates_tokens": 28.0,
+                  "reasoning_tokens": 114.0
+                }
+              }
+            },
+            {
+              "metric_name": "invocation_duration_v1",
+              "threshold": null,
+              "criterion": null,
+              "custom_function_path": null,
+              "score": 2.873,
+              "eval_status": 4,
+              "details": {
+                "rubric_scores": null,
+                "token_usage_details": null
+              }
+            }
+          ]
+        }
+      ],
+      "session_id": "___eval___session___299a9592-b7e1-40c7-9ed0-b298ea9c81d9",
+      "session_details": {
+        "id": "___eval___session___299a9592-b7e1-40c7-9ed0-b298ea9c81d9",
+        "app_name": "adk_01_pit_wall",
+        "user_id": "eval_user",
+        "state": {
+          "__llm_request_key__": "7ad212da-5149-46f3-b55c-2273afe141da"
+        },
+        "events": [
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Qual é a capital da Austrália?",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null,
+                  "media_processing": null,
+                  "speech_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "turn_complete_reason": null,
+            "interaction_status": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "voice_activity": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "environment_id": null,
+            "invocation_id": "e-042df0c3-662f-4df2-b2e3-09ab131b1be9",
+            "author": "user",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "transfer_reason": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "route": null,
+              "render_ui_widgets": null,
+              "set_model_response": null
+            },
+            "output": null,
+            "node_info": {
+              "path": "",
+              "output_for": null,
+              "message_as_output": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "isolation_scope": null,
+            "id": "55708b56-8639-4ab7-b52b-a67d1967a16c",
+            "timestamp": 1790951546.3710346
+          },
+          {
+            "model_version": "gemini-3.8-flash",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Isso está fora do escopo do pit wall; só temos dados de telemetria e corridas de Fórmula 1 por aqui.",
+                  "thought": null,
+                  "thought_signature": "EsoECscEAWkUfROQYGJSfdz_47TEu5zJl4M-HEU7Xjaz9kMeWfRIpYFqNKfC81N8WelLUU9smKnHnKgdP0X6ppo3DstB3nFlwPcGGnGGLEtrfb4IbgAcQHpB27z9iNVx4wsLaBETe-_nG_bxn_234ky7p1qf_Kl_9V7YD_7UH1JBg6VttjoKGbEmQADpkmgW3E7ITK-oaljeNQdGIYn-vJWOkDTnKBlsZSFB2Pu1y2VqZSz636uoMCEmIk1oQjaKEtVJHK4kBrQEJQKrYiZ2s0uKWTZKFKjHv_rpvImyFcJoB0IKifbJ9ghtEOLzrweiB8N90SMertkusAN0dMBSKVbm_2O8NTW4oxStZe7fERkOR9USYMo0uo7zr4d8eoYIG1JBEAwi1V7gSCGDkC5lv2DMXzdUp2rPdguPLwPQaSDU8ilXRXWIEGXrKhBjsNarGIWp_uE4C-OAHPgy9CiOYBxS9GIGO8SJkuulADVYdHBcAZ_VcI2mFI-DYcERNcSVsPvdwXKsy0EGp5JyAFMahJHm0UOfsYqqeWo1kP_xEkUcFkxxgIociERQQ5HLqE8FC570gKSQSnofBAOV_wgftTWLzGo7R92_f6bcj3p2Yr8_PdAcdfXf4-v35fuYt8VzuJiY-mCRkGe8yi2wAJevZi2bUD6KEVayBnIgM2RyArwLNQ-JeQ2KBz3DTpJ4dNMHm2qoRS788iFICRBvrd2enak2MwQIi7XaM839-dwIorPllXtUNXr74fE5BAUO19xYqMgqT8NSmR3hL_iC0A==",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null,
+                  "media_processing": null,
+                  "speech_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "turn_complete_reason": null,
+            "interaction_status": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "7ad212da-5149-46f3-b55c-2273afe141da"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 28,
+              "candidates_tokens_details": null,
+              "prompt_token_count": 1345,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 1345
+                }
+              ],
+              "thoughts_token_count": 114,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 1487,
+              "traffic_type": null
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "voice_activity": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "environment_id": null,
+            "invocation_id": "e-042df0c3-662f-4df2-b2e3-09ab131b1be9",
+            "author": "pit_wall",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "7ad212da-5149-46f3-b55c-2273afe141da"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "transfer_reason": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "route": null,
+              "render_ui_widgets": null,
+              "set_model_response": null
+            },
+            "output": null,
+            "node_info": {
+              "path": "pit_wall@1",
+              "output_for": null,
+              "message_as_output": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "isolation_scope": null,
+            "id": "383eafa8-1da9-4036-8837-7fcc7bcc76d2",
+            "timestamp": 1790951546.985351
+          }
+        ],
+        "last_update_time": 1790951546.985351
+      },
+      "user_id": "eval_user"
+    },
+    {
+      "eval_set_file": "pit_wall_guardrails",
+      "eval_set_id": "pit_wall_guardrails",
+      "eval_id": "missing_season",
+      "final_eval_status": 1,
+      "eval_metric_results": null,
+      "overall_eval_metric_results": [
+        {
+          "metric_name": "tool_trajectory_avg_score",
+          "threshold": 1.0,
+          "criterion": {
+            "threshold": 1.0,
+            "include_intermediate_responses_in_final": false,
+            "match_type": "EXACT"
+          },
+          "custom_function_path": null,
+          "score": 1.0,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": null,
+            "token_usage_details": null
+          }
+        },
+        {
+          "metric_name": "final_response_match_v2",
+          "threshold": 0.9,
+          "criterion": {
+            "threshold": 0.9,
+            "include_intermediate_responses_in_final": false,
+            "judge_model_options": {
+              "judge_model": "gemini-pro-latest",
+              "num_samples": 3
+            }
+          },
+          "custom_function_path": null,
+          "score": 1.0,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": null,
+            "token_usage_details": null
+          }
+        },
+        {
+          "metric_name": "tool_call_count_v1",
+          "threshold": null,
+          "criterion": null,
+          "custom_function_path": null,
+          "score": 0.0,
+          "eval_status": 4,
+          "details": {
+            "rubric_scores": null,
+            "token_usage_details": null
+          }
+        },
+        {
+          "metric_name": "inference_call_count_v1",
+          "threshold": null,
+          "criterion": null,
+          "custom_function_path": null,
+          "score": 1.0,
+          "eval_status": 4,
+          "details": {
+            "rubric_scores": null,
+            "token_usage_details": null
+          }
+        },
+        {
+          "metric_name": "token_usage_v1",
+          "threshold": null,
+          "criterion": null,
+          "custom_function_path": null,
+          "score": 1533.0,
+          "eval_status": 4,
+          "details": {
+            "rubric_scores": null,
+            "token_usage_details": {
+              "total_tokens": 1533.0,
+              "input_tokens": 1352.0,
+              "prompt_tokens": 1352.0,
+              "cached_tokens": null,
+              "tool_use_tokens": null,
+              "output_tokens": 181.0,
+              "candidates_tokens": 7.0,
+              "reasoning_tokens": 174.0
+            }
+          }
+        },
+        {
+          "metric_name": "invocation_duration_v1",
+          "threshold": null,
+          "criterion": null,
+          "custom_function_path": null,
+          "score": 2.916,
+          "eval_status": 4,
+          "details": {
+            "rubric_scores": null,
+            "token_usage_details": null
+          }
+        }
+      ],
+      "eval_metric_result_per_invocation": [
+        {
+          "actual_invocation": {
+            "invocation_id": "e-51b31a3c-0d78-439f-ac01-ba4a2ad4c32a",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Quem foi mais rápido no stint final em Monza, Leclerc ou Piastri?",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null,
+                  "media_processing": null,
+                  "speech_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "De qual temporada você está falando?",
+                  "thought": null,
+                  "thought_signature": "Es0GCsoGAWkUfRMgAPoU0f8gqaYfHO0ZbnqHHNDUZ7nOmecKyaexDr-DHPdcPKXQMfIuHsbATrDAXeY0bHFFZDZchtKDsjrsxIHoL0bfIHePUpieNxQGZ5SOUe5RJ9Wm9QmH2vyLd1Y4FfegfQ3i39c4qrRpTDlnWlm171_VGium2iNuVH0UkPnDa60ndk9VLvVMWOURD3kKlUXvDch3V9dU1LKf4B3nMqVS5sKFfMam8won0lFygPYKy8RJiyUbkQLk-rTsUc2F_uKSkOxBVEHOEiZ9RkVhJYNTlA_Gk3zybfzlPUOj1Tg2nrUCDRZ62SPaaC7_4R_42bivAY99QCZvNsITWpiqxKYFS_pbXtKjD8nmJsPGzlcSaCGKRbxi25ctk1NM1ZMPADBn_i_csJ4vdP9nn8N9_F4XVgVotPx-ATBnutCeWoK0o3t_UtPxtf4x4vqIHo_63_6fQRgdgRQt57xiadtY94zTECgjD_Z0C_Yw9udOdDGJwrzSicw0orOcBdQHyLLZDRomZYBuUYrGn_MyEt6T9zKsuURqPaUTMEWy77VTEc78O3pinA0l5_58_cE9RqnuKnzpzqCtVv2uHfVd0BE0cYtzz1GoJgAMWgi1Wfdd6h7sg7B4JNZWVtuzg9q3Pc3V5tKlAYBiEiwr-vk58S7mEM50Vqm8cQy6lfcB6OmWbtVsxkVYRJtmPxFSZLtgIwZfMoesasaP-6idlem3YeO0ZG3kMFaAhZRSVC_v-rERcWH4H5JoquX2aRS6st-hF-WOlMaglV4N-bdzPNUBymhoj3UNDkrWx3QgwhyY_WFVhhWwzYBCm6_S_z5Q8RaeAsn0gRkJgZzQtzVDvcGjbhw6fHuBl60kCyCxg66Cp3t9ZmN0fPjFsD_SnkSi0tRPCwqH1OAqXekDRnMx2SimfBdoBaQTqSgfndU8pfFtDPPxPFnGG5aiXs6HPIC8CApFLM-sw-2Ksi4lbSjm4z3tc7nxHbqhA3CzashLJ4pOY8Y4JRKnOZ82MAyhr5zJgnmtpkJSoheUh5k1ep_ldprd5BcJNRKaLeNFjPyZOcN6cQZMyt9W852FJwmgEd2JJobXbKAJ38R_gYj-Os6aZEQihXaUq3NWDeBtdyA=",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null,
+                  "media_processing": null,
+                  "speech_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "invocation_events": [
+                {
+                  "author": "pit_wall",
+                  "content": null,
+                  "grounding_metadata": null,
+                  "usage_metadata": {
+                    "cache_tokens_details": null,
+                    "cached_content_token_count": null,
+                    "candidates_token_count": 7,
+                    "candidates_tokens_details": null,
+                    "prompt_token_count": 1352,
+                    "prompt_tokens_details": [
+                      {
+                        "modality": "TEXT",
+                        "token_count": 1352
+                      }
+                    ],
+                    "thoughts_token_count": 174,
+                    "tool_use_prompt_token_count": null,
+                    "tool_use_prompt_tokens_details": null,
+                    "total_token_count": 1533,
+                    "traffic_type": null
+                  },
+                  "model_version": "gemini-3.8-flash"
+                }
+              ]
+            },
+            "creation_timestamp": 1790951549.2331889,
+            "duration": 2.916,
+            "rubrics": null,
+            "app_details": {
+              "agent_details": {
+                "pit_wall": {
+                  "name": "pit_wall",
+                  "instructions": "You are the pit wall of a Formula 1 team: a race engineer who answers questions about Grand Prix results, championship standings and race pace using the timing archive exposed by your tools.\n\nHow to work\n- Every figure you state (positions, points, lap times, gaps, stint lengths) must come from a tool result in this conversation. Never answer from memory.\n- Identify a race by season plus circuit_id or round. Circuit ids: albert_park, americas, bahrain, baku, catalunya, hungaroring, imola, interlagos, jeddah, losail, marina_bay, miami, monaco, monza, red_bull_ring, rodriguez, shanghai, silverstone, spa, suzuka, vegas, villeneuve, yas_marina, zandvoort.\n- If the user does not say which season, ask for it in one short question before calling any tool.\n- compare_lap_times needs driver ids. Unless you already saw the id in a tool result, call get_race_results for that race first and take the ids from it.\n- When comparing pace, lead with the median clean lap, mention the best lap as secondary, and state how many clean laps each figure is based on.\n- Pit stop laps can include red flag stoppages. If a stint looks unusually short, say so instead of drawing conclusions from it.\n- If a tool returns an error, explain in one sentence what was missing and how to rephrase. Do not repeat a call with the same arguments.\n- Stay on Formula 1 race data. For anything else, say in one sentence that it is outside the pit wall's remit.\n\nStyle\n- Reply in the user's language.\n- Answer like a radio call: the conclusion first, then the supporting numbers, no filler.\n\n\nYou are an agent. Your internal name is \"pit_wall\". The description about you is \"Formula 1 race engineer that answers questions about Grand Prix results, championship standings and race pace from lap timing data.\".",
+                  "tool_declarations": [
+                    {
+                      "retrieval": null,
+                      "computer_use": null,
+                      "file_search": null,
+                      "google_search": null,
+                      "google_maps": null,
+                      "code_execution": null,
+                      "enterprise_web_search": null,
+                      "function_declarations": [
+                        {
+                          "description": "Returns the official classification of a Formula 1 Grand Prix.\n\nEach entry has the finishing position, driver id, team, grid slot, laps\ncompleted, status and points. A grid of 0 means a pit lane start. Call\nit first whenever you need driver ids for compare_lap_times or need to\nknow who finished where.",
+                          "name": "get_race_results",
+                          "parameters": null,
+                          "parameters_json_schema": {
+                            "properties": {
+                              "season": {
+                                "description": "Championship year, for example 2024.",
+                                "minimum": 1950,
+                                "title": "Season",
+                                "type": "integer"
+                              },
+                              "round": {
+                                "anyOf": [
+                                  {
+                                    "minimum": 1,
+                                    "type": "integer"
+                                  },
+                                  {
+                                    "type": "null"
+                                  }
+                                ],
+                                "default": null,
+                                "description": "Round number within the season. Provide either round or circuit_id, never both.",
+                                "title": "Round"
+                              },
+                              "circuit_id": {
+                                "anyOf": [
+                                  {
+                                    "type": "string"
+                                  },
+                                  {
+                                    "type": "null"
+                                  }
+                                ],
+                                "default": null,
+                                "description": "Ergast circuit id, for example interlagos, monza, silverstone or red_bull_ring. Provide either round or circuit_id, never both.",
+                                "title": "Circuit Id"
+                              }
+                            },
+                            "required": [
+                              "season"
+                            ],
+                            "title": "get_race_resultsParams",
+                            "type": "object"
+                          },
+                          "response": null,
+                          "response_json_schema": null,
+                          "behavior": null
+                        },
+                        {
+                          "description": "Returns the Formula 1 drivers' championship standings for a season.\n\nUse it for questions about championship points, positions or number of\nwins, either for the latest standings or as they stood after a round.\nA position of 0 means the driver is unclassified.",
+                          "name": "get_driver_standings",
+                          "parameters": null,
+                          "parameters_json_schema": {
+                            "properties": {
+                              "season": {
+                                "description": "Championship year, for example 2024.",
+                                "minimum": 1950,
+                                "title": "Season",
+                                "type": "integer"
+                              },
+                              "after_round": {
+                                "anyOf": [
+                                  {
+                                    "minimum": 1,
+                                    "type": "integer"
+                                  },
+                                  {
+                                    "type": "null"
+                                  }
+                                ],
+                                "default": null,
+                                "description": "Return the standings as they were after this round. Omit it for the latest standings of the season.",
+                                "title": "After Round"
+                              }
+                            },
+                            "required": [
+                              "season"
+                            ],
+                            "title": "get_driver_standingsParams",
+                            "type": "object"
+                          },
+                          "response": null,
+                          "response_json_schema": null,
+                          "behavior": null
+                        },
+                        {
+                          "description": "Compares race pace between drivers in a single Grand Prix.\n\nLaps are split into stints at pit stop laps; red flag stoppages can show\nup as pit stops. Pace only uses clean laps, excluding pit in-laps and\nout-laps, and the median clean lap decides the fastest driver because\nit resists safety car laps. When clean_laps is 0 the pace fields are\nomitted. fastest_driver_id is omitted when stint is all. Race laps only,\nnever qualifying or practice.",
+                          "name": "compare_lap_times",
+                          "parameters": null,
+                          "parameters_json_schema": {
+                            "properties": {
+                              "season": {
+                                "description": "Championship year, for example 2024.",
+                                "minimum": 1950,
+                                "title": "Season",
+                                "type": "integer"
+                              },
+                              "drivers": {
+                                "description": "Ergast driver ids to compare, between 1 and 4, for example max_verstappen, norris or hamilton. Use get_race_results to discover them.",
+                                "items": {
+                                  "type": "string"
+                                },
+                                "title": "Drivers",
+                                "type": "array"
+                              },
+                              "round": {
+                                "anyOf": [
+                                  {
+                                    "minimum": 1,
+                                    "type": "integer"
+                                  },
+                                  {
+                                    "type": "null"
+                                  }
+                                ],
+                                "default": null,
+                                "description": "Round number within the season. Provide either round or circuit_id, never both.",
+                                "title": "Round"
+                              },
+                              "circuit_id": {
+                                "anyOf": [
+                                  {
+                                    "type": "string"
+                                  },
+                                  {
+                                    "type": "null"
+                                  }
+                                ],
+                                "default": null,
+                                "description": "Ergast circuit id, for example interlagos, monza, silverstone or red_bull_ring. Provide either round or circuit_id, never both.",
+                                "title": "Circuit Id"
+                              },
+                              "stint": {
+                                "default": "final",
+                                "description": "Which stint to analyse: final (default), all, or a stint number such as 2.",
+                                "title": "Stint",
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "season",
+                              "drivers"
+                            ],
+                            "title": "compare_lap_timesParams",
+                            "type": "object"
+                          },
+                          "response": null,
+                          "response_json_schema": null,
+                          "behavior": null
+                        }
+                      ],
+                      "google_search_retrieval": null,
+                      "parallel_ai_search": null,
+                      "url_context": null,
+                      "mcp_servers": null,
+                      "exa_ai_search": null
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "expected_invocation": {
+            "invocation_id": "missing-season-1",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Quem foi mais rápido no stint final em Monza, Leclerc ou Piastri?",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null,
+                  "media_processing": null,
+                  "speech_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "De qual temporada você quer a comparação entre Leclerc e Piastri em Monza?",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null,
+                  "media_processing": null,
+                  "speech_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "tool_uses": [],
+              "tool_responses": [],
+              "intermediate_responses": []
+            },
+            "creation_timestamp": 0.0,
+            "duration": null,
+            "rubrics": null,
+            "app_details": null
+          },
+          "eval_metric_results": [
+            {
+              "metric_name": "tool_trajectory_avg_score",
+              "threshold": 1.0,
+              "criterion": {
+                "threshold": 1.0,
+                "include_intermediate_responses_in_final": false,
+                "match_type": "EXACT"
+              },
+              "custom_function_path": null,
+              "score": 1.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": null,
+                "token_usage_details": null
+              }
+            },
+            {
+              "metric_name": "final_response_match_v2",
+              "threshold": 0.9,
+              "criterion": {
+                "threshold": 0.9,
+                "include_intermediate_responses_in_final": false,
+                "judge_model_options": {
+                  "judge_model": "gemini-pro-latest",
+                  "num_samples": 3
+                }
+              },
+              "custom_function_path": null,
+              "score": 1.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": null,
+                "token_usage_details": null
+              }
+            },
+            {
+              "metric_name": "tool_call_count_v1",
+              "threshold": null,
+              "criterion": null,
+              "custom_function_path": null,
+              "score": 0.0,
+              "eval_status": 4,
+              "details": {
+                "rubric_scores": null,
+                "token_usage_details": null
+              }
+            },
+            {
+              "metric_name": "inference_call_count_v1",
+              "threshold": null,
+              "criterion": null,
+              "custom_function_path": null,
+              "score": 1.0,
+              "eval_status": 4,
+              "details": {
+                "rubric_scores": null,
+                "token_usage_details": null
+              }
+            },
+            {
+              "metric_name": "token_usage_v1",
+              "threshold": null,
+              "criterion": null,
+              "custom_function_path": null,
+              "score": 1533.0,
+              "eval_status": 4,
+              "details": {
+                "rubric_scores": null,
+                "token_usage_details": {
+                  "total_tokens": 1533.0,
+                  "input_tokens": 1352.0,
+                  "prompt_tokens": 1352.0,
+                  "cached_tokens": null,
+                  "tool_use_tokens": null,
+                  "output_tokens": 181.0,
+                  "candidates_tokens": 7.0,
+                  "reasoning_tokens": 174.0
+                }
+              }
+            },
+            {
+              "metric_name": "invocation_duration_v1",
+              "threshold": null,
+              "criterion": null,
+              "custom_function_path": null,
+              "score": 2.916,
+              "eval_status": 4,
+              "details": {
+                "rubric_scores": null,
+                "token_usage_details": null
+              }
+            }
+          ]
+        }
+      ],
+      "session_id": "___eval___session___aca883d0-a221-402b-bdfc-38924fe4c57b",
+      "session_details": {
+        "id": "___eval___session___aca883d0-a221-402b-bdfc-38924fe4c57b",
+        "app_name": "adk_01_pit_wall",
+        "user_id": "eval_user",
+        "state": {
+          "__llm_request_key__": "ee74e73a-c310-4cfa-b786-395a4f111415"
+        },
+        "events": [
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Quem foi mais rápido no stint final em Monza, Leclerc ou Piastri?",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null,
+                  "media_processing": null,
+                  "speech_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "turn_complete_reason": null,
+            "interaction_status": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "voice_activity": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "environment_id": null,
+            "invocation_id": "e-51b31a3c-0d78-439f-ac01-ba4a2ad4c32a",
+            "author": "user",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "transfer_reason": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "route": null,
+              "render_ui_widgets": null,
+              "set_model_response": null
+            },
+            "output": null,
+            "node_info": {
+              "path": "",
+              "output_for": null,
+              "message_as_output": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "isolation_scope": null,
+            "id": "77c74752-817e-4322-8325-e9051fb5e82b",
+            "timestamp": 1790951546.3690584
+          },
+          {
+            "model_version": "gemini-3.8-flash",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "De qual temporada você está falando?",
+                  "thought": null,
+                  "thought_signature": "Es0GCsoGAWkUfRMgAPoU0f8gqaYfHO0ZbnqHHNDUZ7nOmecKyaexDr-DHPdcPKXQMfIuHsbATrDAXeY0bHFFZDZchtKDsjrsxIHoL0bfIHePUpieNxQGZ5SOUe5RJ9Wm9QmH2vyLd1Y4FfegfQ3i39c4qrRpTDlnWlm171_VGium2iNuVH0UkPnDa60ndk9VLvVMWOURD3kKlUXvDch3V9dU1LKf4B3nMqVS5sKFfMam8won0lFygPYKy8RJiyUbkQLk-rTsUc2F_uKSkOxBVEHOEiZ9RkVhJYNTlA_Gk3zybfzlPUOj1Tg2nrUCDRZ62SPaaC7_4R_42bivAY99QCZvNsITWpiqxKYFS_pbXtKjD8nmJsPGzlcSaCGKRbxi25ctk1NM1ZMPADBn_i_csJ4vdP9nn8N9_F4XVgVotPx-ATBnutCeWoK0o3t_UtPxtf4x4vqIHo_63_6fQRgdgRQt57xiadtY94zTECgjD_Z0C_Yw9udOdDGJwrzSicw0orOcBdQHyLLZDRomZYBuUYrGn_MyEt6T9zKsuURqPaUTMEWy77VTEc78O3pinA0l5_58_cE9RqnuKnzpzqCtVv2uHfVd0BE0cYtzz1GoJgAMWgi1Wfdd6h7sg7B4JNZWVtuzg9q3Pc3V5tKlAYBiEiwr-vk58S7mEM50Vqm8cQy6lfcB6OmWbtVsxkVYRJtmPxFSZLtgIwZfMoesasaP-6idlem3YeO0ZG3kMFaAhZRSVC_v-rERcWH4H5JoquX2aRS6st-hF-WOlMaglV4N-bdzPNUBymhoj3UNDkrWx3QgwhyY_WFVhhWwzYBCm6_S_z5Q8RaeAsn0gRkJgZzQtzVDvcGjbhw6fHuBl60kCyCxg66Cp3t9ZmN0fPjFsD_SnkSi0tRPCwqH1OAqXekDRnMx2SimfBdoBaQTqSgfndU8pfFtDPPxPFnGG5aiXs6HPIC8CApFLM-sw-2Ksi4lbSjm4z3tc7nxHbqhA3CzashLJ4pOY8Y4JRKnOZ82MAyhr5zJgnmtpkJSoheUh5k1ep_ldprd5BcJNRKaLeNFjPyZOcN6cQZMyt9W852FJwmgEd2JJobXbKAJ38R_gYj-Os6aZEQihXaUq3NWDeBtdyA=",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null,
+                  "media_processing": null,
+                  "speech_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "turn_complete_reason": null,
+            "interaction_status": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "ee74e73a-c310-4cfa-b786-395a4f111415"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 7,
+              "candidates_tokens_details": null,
+              "prompt_token_count": 1352,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 1352
+                }
+              ],
+              "thoughts_token_count": 174,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 1533,
+              "traffic_type": null
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "voice_activity": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "environment_id": null,
+            "invocation_id": "e-51b31a3c-0d78-439f-ac01-ba4a2ad4c32a",
+            "author": "pit_wall",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "ee74e73a-c310-4cfa-b786-395a4f111415"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "transfer_reason": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "route": null,
+              "render_ui_widgets": null,
+              "set_model_response": null
+            },
+            "output": null,
+            "node_info": {
+              "path": "pit_wall@1",
+              "output_for": null,
+              "message_as_output": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "isolation_scope": null,
+            "id": "74231ccf-81eb-4545-a11e-aa375f9c61b3",
+            "timestamp": 1790951546.9680452
+          }
+        ],
+        "last_update_time": 1790951546.9680452
+      },
+      "user_id": "eval_user"
+    }
+  ],
+  "creation_timestamp": 1790951570.6364212
+}

@@ -1,0 +1,71 @@
+{
+  "eval_set_id": "pit_wall_guardrails",
+  "name": "Pit Wall guardrails",
+  "description": "Questions the agent must answer without calling any tool.",
+  "eval_cases": [
+    {
+      "eval_id": "missing_season",
+      "conversation": [
+        {
+          "invocation_id": "missing-season-1",
+          "user_content": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Quem foi mais rápido no stint final em Monza, Leclerc ou Piastri?"
+              }
+            ]
+          },
+          "final_response": {
+            "role": "model",
+            "parts": [
+              {
+                "text": "De qual temporada você quer a comparação entre Leclerc e Piastri em Monza?"
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": []
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "adk_01_pit_wall",
+        "user_id": "eval_user",
+        "state": {}
+      }
+    },
+    {
+      "eval_id": "off_topic",
+      "conversation": [
+        {
+          "invocation_id": "off-topic-1",
+          "user_content": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Qual é a capital da Austrália?"
+              }
+            ]
+          },
+          "final_response": {
+            "role": "model",
+            "parts": [
+              {
+                "text": "Isso está fora do escopo do pit wall, que só responde sobre dados de corrida da Fórmula 1."
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": []
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "adk_01_pit_wall",
+        "user_id": "eval_user",
+        "state": {}
+      }
+    }
+  ]
+}

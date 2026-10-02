@@ -16,7 +16,7 @@ class Duration(_Output):
 
     @classmethod
     def of(cls, value: timedelta) -> Self:
-        millis = round(value.total_seconds() * 1000)
+        millis = (value // timedelta(microseconds=1) + 500) // 1000
         minutes, rest = divmod(millis, 60_000)
         seconds, fraction = divmod(rest, 1000)
         return cls(millis=millis, display=f"{minutes}:{seconds:02d}.{fraction:03d}")

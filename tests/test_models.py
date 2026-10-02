@@ -12,6 +12,7 @@ from adk_01_pit_wall.models import Duration
         (timedelta(microseconds=72333333), Duration(millis=72333, display="1:12.333")),
         (timedelta(seconds=59.9996), Duration(millis=60000, display="1:00.000")),
         (timedelta(milliseconds=9050), Duration(millis=9050, display="0:09.050")),
+        (timedelta(microseconds=82270500), Duration(millis=82271, display="1:22.271")),
     ],
 )
 def test_duration_of(value, expected):

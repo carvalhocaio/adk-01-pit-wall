@@ -33,14 +33,5 @@ jobs:
       - name: Install dependencies
         run: uv sync --frozen
 
-      - name: Check code linting
-        run: uv run ruff check .
-
-      - name: Check code formatting
-        run: uv run ruff format --check .
-
-      - name: Audit dependencies
-        run: uv run pip-audit
-
-      - name: Run tests
-        run: uv run pytest
+      - name: Lint, audit and test
+        run: make ci

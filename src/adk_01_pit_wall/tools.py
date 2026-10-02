@@ -6,6 +6,7 @@ from pydantic import Field
 from .f1 import (
     DriverPace,
     DriverStanding,
+    FastestLap,
     InvalidStintSelectorError,
     Lap,
     NoLapsError,
@@ -21,6 +22,8 @@ from .f1 import (
 )
 from .models import (
     DriverStints,
+    Duration,
+    FastestLapEntry,
     LapComparison,
     RaceResultsReport,
     RaceSummary,
@@ -95,9 +98,12 @@ class PitWallTools:
         """Returns the official classification of a Formula 1 Grand Prix.
 
         Each entry has the finishing position, driver id, team, grid slot, laps
-        completed, status and points. A grid of 0 means a pit lane start. Call
-        it first whenever you need driver ids for compare_lap_times or need to
-        know who finished where.
+        completed, status, points and the driver's fastest lap. A grid of 0
+        means a pit lane start. fastest_lap.rank 1 marks the fastest lap of the
+        race; from 2019 to 2024 that driver scored one extra point when
+        finishing in the top 10. fastest_lap is omitted when the archive has
+        no timing for the driver. Call it first whenever you need driver ids
+        for compare_lap_times or need to know who finished where.
         """
         round_ = await self._resolve_round(season, round, circuit_id)
         race, results = await self._source.race_results(season, round_)
@@ -275,6 +281,17 @@ def _result_entry(result: RaceResult) -> ResultEntry:
         laps=result.laps,
         status=result.status,
         points=result.points,
+        fastest_lap=_fastest_lap_entry(result.fastest_lap),
+    )
+
+
+def _fastest_lap_entry(fastest_lap: FastestLap | None) -> FastestLapEntry | None:
+    if fastest_lap is None:
+        return None
+    return FastestLapEntry(
+        rank=fastest_lap.rank,
+        lap=fastest_lap.lap,
+        time=Duration.of(fastest_lap.time),
     )
 
 

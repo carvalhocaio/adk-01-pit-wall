@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from datetime import date
+from datetime import date, timedelta
 
 
 @dataclass(frozen=True, slots=True)
@@ -26,6 +26,13 @@ class Constructor:
 
 
 @dataclass(frozen=True, slots=True)
+class FastestLap:
+    rank: int
+    lap: int
+    time: timedelta
+
+
+@dataclass(frozen=True, slots=True)
 class RaceResult:
     position: int
     driver: Driver
@@ -34,6 +41,7 @@ class RaceResult:
     laps: int
     status: str
     points: float
+    fastest_lap: FastestLap | None = None
 
 
 @dataclass(frozen=True, slots=True)

@@ -4,7 +4,15 @@ from datetime import date, timedelta
 import httpx
 import pytest
 
-from adk_01_pit_wall.f1 import Constructor, Driver, Lap, NoLapsError, Race, RaceResult
+from adk_01_pit_wall.f1 import (
+    Constructor,
+    Driver,
+    FastestLap,
+    Lap,
+    NoLapsError,
+    Race,
+    RaceResult,
+)
 from adk_01_pit_wall.jolpica import (
     MalformedResponseError,
     RaceNotFoundError,
@@ -58,6 +66,7 @@ async def test_race_results(make_client: ClientFactory):
         laps=69,
         status="Finished",
         points=26,
+        fastest_lap=FastestLap(rank=1, lap=67, time=timedelta(milliseconds=80472)),
     )
 
 

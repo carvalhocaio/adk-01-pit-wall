@@ -22,6 +22,16 @@ class ConstructorDTO(_Payload):
     name: str
 
 
+class LapTimeDTO(_Payload):
+    time: str
+
+
+class FastestLapDTO(_Payload):
+    rank: int
+    lap: int
+    time: LapTimeDTO = Field(alias="Time")
+
+
 class ResultDTO(_Payload):
     position: int
     points: float
@@ -30,6 +40,7 @@ class ResultDTO(_Payload):
     status: str
     driver: DriverDTO = Field(alias="Driver")
     constructor: ConstructorDTO = Field(alias="Constructor")
+    fastest_lap: FastestLapDTO | None = Field(default=None, alias="FastestLap")
 
 
 class TimingDTO(_Payload):

@@ -4,6 +4,7 @@ from adk_01_pit_wall.f1 import (
     Constructor,
     Driver,
     DriverStanding,
+    FastestLap,
     Lap,
     Race,
     RaceResult,
@@ -13,6 +14,7 @@ from .dto import (
     ConstructorDTO,
     DriverDTO,
     DriverStandingsDTO,
+    FastestLapDTO,
     LapDTO,
     PitStopDTO,
     RaceDTO,
@@ -56,6 +58,12 @@ def to_constructor(dto: ConstructorDTO) -> Constructor:
     return Constructor(id=dto.constructor_id, name=dto.name)
 
 
+def to_fastest_lap(dto: FastestLapDTO | None) -> FastestLap | None:
+    if dto is None:
+        return None
+    return FastestLap(rank=dto.rank, lap=dto.lap, time=parse_lap_time(dto.time.time))
+
+
 def to_race_result(dto: ResultDTO) -> RaceResult:
     return RaceResult(
         position=dto.position,
@@ -65,6 +73,7 @@ def to_race_result(dto: ResultDTO) -> RaceResult:
         laps=dto.laps,
         status=dto.status,
         points=dto.points,
+        fastest_lap=to_fastest_lap(dto.fastest_lap),
     )
 
 

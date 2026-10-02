@@ -42,6 +42,12 @@ class RaceSummary(_Output):
         )
 
 
+class FastestLapEntry(_Output):
+    rank: int
+    lap: int
+    time: Duration
+
+
 class ResultEntry(_Output):
     position: int
     driver_id: str
@@ -52,6 +58,7 @@ class ResultEntry(_Output):
     laps: int
     status: str
     points: float
+    fastest_lap: FastestLapEntry | None = None
 
 
 class RaceResultsReport(_Output):

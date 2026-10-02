@@ -56,6 +56,17 @@
               "Time": {
                 "millis": "7614430",
                 "time": "2:06:54.430"
+              },
+              "FastestLap": {
+                "rank": "1",
+                "lap": "67",
+                "Time": {
+                  "time": "1:20.472"
+                },
+                "AverageSpeed": {
+                  "units": "kph",
+                  "speed": "192.767"
+                }
               }
             },
             {
@@ -85,6 +96,17 @@
               "Time": {
                 "millis": "7633907",
                 "time": "+19.477"
+              },
+              "FastestLap": {
+                "rank": "7",
+                "lap": "64",
+                "Time": {
+                  "time": "1:21.771"
+                },
+                "AverageSpeed": {
+                  "units": "kph",
+                  "speed": "189.705"
+                }
               }
             }
           ]

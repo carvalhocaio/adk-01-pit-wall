@@ -1,7 +1,9 @@
+from datetime import timedelta
+
 import pytest
 
-from adk_01_pit_wall.f1 import Constructor, Driver, RaceResult
-from adk_01_pit_wall.models import ResultEntry
+from adk_01_pit_wall.f1 import Constructor, Driver, FastestLap, RaceResult
+from adk_01_pit_wall.models import Duration, FastestLapEntry, ResultEntry
 from adk_01_pit_wall.tools import InvalidToolArgsError, PitWallTools
 
 from .support import FakeRaceData
@@ -14,6 +16,7 @@ VERSTAPPEN_WIN = RaceResult(
     laps=69,
     status="Finished",
     points=26,
+    fastest_lap=FastestLap(rank=1, lap=67, time=timedelta(milliseconds=80472)),
 )
 
 
@@ -44,6 +47,9 @@ async def test_get_race_results_resolves_race(round_, circuit_id, expected_looku
             laps=69,
             status="Finished",
             points=26,
+            fastest_lap=FastestLapEntry(
+                rank=1, lap=67, time=Duration(millis=80472, display="1:20.472")
+            ),
         )
     ]
 
@@ -65,3 +71,21 @@ async def test_get_race_results_rejects_invalid_race_reference(
         await PitWallTools(FakeRaceData()).get_race_results(
             season, round=round_, circuit_id=circuit_id
         )
+
+
+async def test_get_race_results_omits_missing_fastest_lap():
+    retired = RaceResult(
+        position=20,
+        driver=Driver(id="albon", code="ALB", name="Alexander Albon"),
+        constructor=Constructor(id="williams", name="Williams"),
+        grid=0,
+        laps=0,
+        status="Did not start",
+        points=0,
+    )
+
+    report = await PitWallTools(FakeRaceData(results=[retired])).get_race_results(
+        2024, round=21
+    )
+
+    assert "fastest_lap" not in report.model_dump(exclude_none=True)["results"][0]

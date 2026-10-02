@@ -1,7 +1,7 @@
 [project]
 name = "adk-01-pit-wall"
 version = "0.1.0"
-description = "Starter template for modern Python projects"
+description = "Google ADK Formula 1 race engineer agent with typed async tools over the Jolpica API"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
